@@ -11,7 +11,7 @@ Plugins installed:
 
 ```js
 {
-  // @rocketseat/eslint-config
+  // rocketseat/eslint-config
   "extends": "@rocketseat/eslint-config/react",
 
   //eslint-plugin-import-helpers
