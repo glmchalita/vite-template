@@ -14,7 +14,7 @@ Plugins installed:
   // rocketseat/eslint-config
   "extends": "@rocketseat/eslint-config/react",
 
-  //eslint-plugin-import-helpers
+  // eslint-plugin-import-helpers
   "plugins": ["eslint-plugin-import-helpers"],
   "rules": {
     "import-helpers/order-imports": [
