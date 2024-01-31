@@ -9,7 +9,7 @@ Plugins installed:
 
 ## ESLint configuration
 
-```json
+```js
 {
   // @rocketseat/eslint-config
   "extends": "@rocketseat/eslint-config/react",
