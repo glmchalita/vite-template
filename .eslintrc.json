@@ -8,9 +8,10 @@
         "newlinesBetween": "always",
         "groups": [
           "/^react/",
+          "/hooks/",
           "module",
-          "/^@shared/",
-          ["parent", "sibling", "index"]
+          ["parent", "sibling", "index"],
+          ["/phosphor/", "/styles/", "/assets/"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
       }
