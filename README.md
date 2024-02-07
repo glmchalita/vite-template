@@ -5,7 +5,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 Plugins installed:
 
 - [@rocketseat/eslint-config](https://github.com/Rocketseat/eslint-config-rocketseat)
-- [eslint-plugin-import-helpers](https://github.com/willhoney7/eslint-plugin-import-helpers)
+- [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
 
 ## ESLint configuration
 
@@ -13,23 +13,19 @@ Plugins installed:
 {
   // rocketseat/eslint-config
   "extends": "@rocketseat/eslint-config/react",
-
-  // eslint-plugin-import-helpers
-  "plugins": ["eslint-plugin-import-helpers"],
+  // eslint-plugin-simple-import-sort
+  "plugins": ["simple-import-sort"],
   "rules": {
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        "newlinesBetween": "always",
-        "groups": [
-          "/^react/",
-          "module",
-          "/^@shared/",
-          ["parent", "sibling", "index"]
-        ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ]
+    "import/newline-after-import" : "error",
+    "import/no-duplicates": "error",
+    "simple-import-sort/imports": ["error", {
+      "groups": [
+        ["^react", "/hooks"],
+        ["/components"],
+        ["/lib", "/utils"],
+        ["/assets", "/styles"]
+      ]
+    }] 
   }
 }
 ```
