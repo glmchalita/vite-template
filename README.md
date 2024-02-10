@@ -18,14 +18,7 @@ Plugins installed:
   "rules": {
     "import/newline-after-import" : "error",
     "import/no-duplicates": "error",
-    "simple-import-sort/imports": ["error", {
-      "groups": [
-        ["^react", "/hooks"],
-        ["/components"],
-        ["/lib", "/utils"],
-        ["/assets", "/styles"]
-      ]
-    }] 
+    "simple-import-sort/imports": "error", 
   }
 }
 ```
